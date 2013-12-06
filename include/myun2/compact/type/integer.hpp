@@ -15,6 +15,9 @@ namespace myun2
 			public:
 				integer() : value(0) {}
 				integer(const T& v_in) : value(v_in) {}
+
+				const void* serialize_value() const { return &value; }
+				unsigned int size() const { return sizeof(T); }
 			};
 
 			typedef integer<float> float_value;
