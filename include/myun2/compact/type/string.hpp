@@ -17,7 +17,7 @@ namespace myun2
 			public:
 				string(){}
 				string(const ::std::string& s) : value(s) {}
-				string(const const char* s) : value(s) {}
+				string(const char* s) : value(s) {}
 
 				const void* serialize_value() const { return value.c_str(); }
 				unsigned int size() const { return value.size(); }
