@@ -7,9 +7,18 @@ namespace myun2
 	{
 		namespace type
 		{
+			template <typename T>
 			class integer
 			{
+			private:
+				T value;
+			public:
+				integer() : value(0) {}
+				integer(const T& v_in) : value(v_in) {}
 			};
+
+			typedef integer<float> float_value;
+			typedef integer<double> double_value;
 		}
 	}
 }
