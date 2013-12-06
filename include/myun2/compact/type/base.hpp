@@ -9,6 +9,9 @@ namespace myun2
 		{
 			class base
 			{
+			public:
+				virtual const void* serialize_value() const =0;
+				virtual unsigned int size() const =0;
 			};
 		}
 	}
